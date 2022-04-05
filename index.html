@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Library</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <div class="content">
+        <div class="header">
+            <p class="library">Library</p>
+            <button id="new">NEW BOOK</button>
+        </div>
+        <div id="main" class="container">
+            <p class="footer">Page Created by <a href="https://github.com/remiferiaa">Remiferiaa</a></p>
+        </div>
+        <form id="add" autocomplete="off">
+            <button type="button" class="cancel">&#10060;</button>
+            <label for="title">Title</label>
+            <input type="text" id="title" name="title" required>
+            <label for="author">Author</label>
+            <input type="text" id="author" name="author" required>
+            <label for="pages">Pages</label>
+            <input type="tel" id="pages" name="pages" pattern="^[0-9]*$" required>
+            <div class="status">
+                <label for="read">Read</label>
+                <input type="radio" id="read" name="status" value="read" required>
+                <label for="unread">Not yet Read</label>
+                <input type="radio" id="unread" name="status" value="unread" required>
+            </div>
+            <button type="submit" id="publish">Add book</button>
+        </form>
+
+    </div>
+</body>
+
+</html>
